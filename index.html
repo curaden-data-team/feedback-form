@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini Enterprise Feedback</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #1a73e8;
+        }
+        .form-container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 8px;
+        }
+        input[type="text"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+        .rating {
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .rating li {
+            cursor: pointer;
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #1a73e8;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+        input[type="submit"]:hover {
+            background-color: #1558b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Gemini Enterprise Feedback</h1>
+        <p>Thank you for taking the time to share your feedback. This form should take no more than 5 minutes to complete.</p>
+        <form action="#" method="POST">
+            <div class="question">
+                <label for="overall_satisfaction">1. Overall, how satisfied are you with Gemini Enterprise?</label>
+                <select id="overall_satisfaction" name="overall_satisfaction">
+                    <option value="5">Very Satisfied</option>
+                    <option value="4">Satisfied</option>
+                    <option value="3">Neutral</option>
+                    <option value="2">Unsatisfied</option>
+                    <option value="1">Very Unsatisfied</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="ease_of_use">2. How easy or difficult did you find it to use?</label>
+                <select id="ease_of_use" name="ease_of_use">
+                    <option value="5">Very Easy</option>
+                    <option value="4">Easy</option>
+                    <option value="3">Neutral</option>
+                    <option value="2">Difficult</option>
+                    <option value="1">Very Difficult</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="primary_use_case">3. What did you primarily use Gemini Enterprise for?</label>
+                <input type="text" id="primary_use_case" name="primary_use_case" placeholder="e.g., writing emails, summarizing documents, coding assistance...">
+            </div>
+            <div class="question">
+                <label for="most_useful_feature">4. What was the most useful feature or capability for you?</label>
+                <input type="text" id="most_useful_feature" name="most_useful_feature" placeholder="e.g., speed, accuracy, specific tool integrations...">
+            </div>
+            <div class="question">
+                <label for="improvement_suggestions">5. What is the number one thing we could do to improve Gemini Enterprise?</label>
+                <textarea id="improvement_suggestions" name="improvement_suggestions" placeholder="Please be as specific as possible."></textarea>
+            </div>
+            <div class="question">
+                <label for="recommend_likelihood">6. On a scale of 0-10, how likely are you to recommend Gemini Enterprise to a colleague?</label>
+                <input type="number" id="recommend_likelihood" name="recommend_likelihood" min="0" max="10" step="1" style="width: auto;">
+                 (0 = Not at all likely, 10 = Extremely likely)
+            </div>
+             <div class="question">
+                <label for="any_other_feedback">7. Is there anything else you'd like to share?</label>
+                <textarea id="any_other_feedback" name="any_other_feedback" placeholder="Any other comments, suggestions, or issues."></textarea>
+            </div>
+            <input type="submit" value="Submit Feedback">
+        </form>
+    </div>
+</body>
+</html>
